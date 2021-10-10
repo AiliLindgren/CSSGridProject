@@ -8,7 +8,7 @@ main{
     height: 100vh;
 }
 
-/* Total height of grid-container minus padding consists of grid-rows plus row-gap, 58.6% + 38.0% + 3.4% = 100%. Padding is computed on element's width and therefore has the same value as column-gap. */
+/* Total height of grid-container minus padding consists of grid-rows plus row-gap, 58.6% + 38.0% + 3.4% = 100%. Padding is computed on element's width and therefore has the same value as column-gap. Reset.css reset inherited margins from default browser-stylesheet on h1 in bottom container. */
 
 .grid__container {
     width: 100%;
