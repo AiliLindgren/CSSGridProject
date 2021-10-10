@@ -1,20 +1,25 @@
 body {
     width: 100%;
+    height: 100vh; 
+}
+
+main{
+    width: 100%;
     height: 100vh;
 }
 
+/* Total height of grid-container minus padding consists of grid-rows plus row-gap, 58.6% + 38.0% + 3.4% = 100%. Padding is computed on element's width and therefore has the same value as column-gap. */
+
 .grid__container {
-    border: 1px solid red;
     width: 100%;
-    height: 100vh;
+    height: 81vh;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60.7% 39.3%;
-    grid-gap: 24px;
-    padding: 24px;
-    align-content: start;
-    /* padding-bottom: 24px; */
+    grid-template-rows: 58.6% 38.0%;
+    row-gap: 3.4%;
+    column-gap: 1.7%;
+    padding: 1.7%;
 }
 
 .item1 {
@@ -22,7 +27,7 @@ body {
     display: grid; 
     grid-auto-flow: row;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 24px;
+    row-gap: 5.8%;
 }
 
 .item1A {
@@ -45,7 +50,7 @@ body {
     display: grid; 
     grid-auto-flow: row;
     grid-template-rows: repeat(3 1fr);
-    grid-gap: 24px;
+    row-gap: 5.8%;
 }
 
 .item3A {
@@ -68,7 +73,7 @@ body {
     display: grid; 
     grid-auto-flow: row;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 24px;
+    row-gap: 9%;
 }
 
 .item5A {
@@ -86,4 +91,24 @@ body {
 
 .item7 {
     background: #007F5F;
+}
+
+.bottom-container {
+    width: 100%;
+    height: 19vh;
+    box-sizing: border-box;
+    background: #9BC1BC;
+    display: flex;
+    align-items: center;
+}
+
+.text-box {    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-left: 1.7%;
 }
